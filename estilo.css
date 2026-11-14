@@ -50,9 +50,11 @@ body {
 
 h1 {
   margin: .75rem 0 1.65rem;
-  font: 500 clamp(1rem, 2.8vw, 1.125rem)/1.45 var(--sans);
-  text-wrap: balance;
+  color: var(--violeta);
+  font: 500 clamp(1rem, 2.8vw, 1.125rem)/1.25 var(--sans);
+  text-align: center;
 }
+h1 span { display: block; }
 
 .entrar {
   display: inline-flex;
