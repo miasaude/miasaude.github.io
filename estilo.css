@@ -1,0 +1,72 @@
+* { box-sizing: border-box; }
+:root {
+  color-scheme: light;
+  --tinta: #252748;
+  --azul: #424aa0;
+  --roxo: #684294;
+  --serif: Baskervville, "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+  --sans: "DM Sans", "Segoe UI", system-ui, sans-serif;
+}
+body {
+  min-height: 100vh;
+  min-height: 100svh;
+  margin: 0;
+  padding: 1rem;
+  display: grid;
+  place-items: center;
+  color: var(--tinta);
+  background: radial-gradient(ellipse at 15% 15%, #e7eafc, transparent 60%),
+              radial-gradient(ellipse at 90% 90%, #ede6f9, transparent 65%), #f5f5fc;
+  font-family: var(--sans);
+}
+.entrada {
+  width: min(100%, 27rem);
+  padding: clamp(1.6rem, 7vw, 3rem);
+  border: 1px solid #d4d4e8;
+  border-radius: 1.45rem;
+  background: #fefeff;
+  box-shadow: 0 14px 46px #3937530d;
+}
+.simbolo {
+  position: relative;
+  isolation: isolate;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 28px;
+  gap: 7px;
+  background: var(--roxo);
+  border-radius: 45% 45% 50% 50%;
+}
+.simbolo::before, .simbolo::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: -4px;
+  width: 12px;
+  height: 14px;
+  border-radius: 2px;
+  background: var(--roxo);
+}
+.simbolo::before { left: 0; transform: skewY(28deg); }
+.simbolo::after { right: 0; transform: skewY(-28deg); }
+.simbolo i { width: 4px; height: 3px; border-radius: 50%; background: white; }
+h1 { margin: 1.2rem 0 .55rem; font: 400 clamp(2rem, 8vw, 2.85rem)/1.05 var(--serif); letter-spacing: -.05em; }
+h1 em { color: var(--roxo); }
+p { margin: 0 0 1.6rem; max-width: 30ch; font-size: 1rem; line-height: 1.5; color: #555673; }
+.entrar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+  min-height: 46px;
+  padding: .7rem 1.4rem;
+  border-radius: .6rem;
+  color: white;
+  background: var(--azul);
+  text-decoration: none;
+  font-weight: 650;
+}
+.entrar:hover { background: #333979; }
+.entrar:focus-visible { outline: 3px solid var(--roxo); outline-offset: 3px; }
