@@ -9,7 +9,7 @@
 .sobre-mia { max-width: 49rem; margin: .75rem auto 2rem; }
 .sobre-abertura { --pata-tamanho: clamp(9rem, 23vw, 14rem); padding: clamp(1.5rem, 4vw, 3rem); background: linear-gradient(120deg, #f7f5fc, #eef1fb); border: 1px solid #e2ddec; border-radius: 1.1rem; }
 .sobrancelha { margin: 0 0 .85rem; color: #665087; font-size: .75rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; }
-.sobre-abertura h1 { max-width: 13ch; margin: 0; font: 600 clamp(2.3rem, 5vw, 3.6rem)/1.06 "DM Sans", system-ui, sans-serif; letter-spacing: -.045em; color: #322344; }
+.sobre-abertura h1 { max-width: 13ch; margin: 0; font: 600 clamp(2.3rem, 5vw, 3.6rem)/1.06 var(--fonte); letter-spacing: -.02em; color: #322344; }
 .sobre-intro { max-width: 36ch; margin: 1.15rem 0 0; color: #625b6d; font-size: 1.05rem; line-height: 1.6; }
 .com-retrato-pi { display: grid; grid-template-columns: minmax(0,1fr) 13rem; align-items: center; gap: 2rem; }
 .sobre-retrato { width: 13rem; margin: 0; text-align: center; }
