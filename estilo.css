@@ -4,7 +4,6 @@
   --tinta: #252748;
   --azul: #424aa0;
   --roxo: #684294;
-  --serif: Baskervville, "Iowan Old Style", "Palatino Linotype", Georgia, serif;
   --sans: "DM Sans", "Segoe UI", system-ui, sans-serif;
 }
 body {
@@ -28,9 +27,7 @@ body {
   box-shadow: 0 14px 46px #3937530d;
 }
 .marca { display: block; width: min(12rem, 80%); height: auto; }
-h1 { margin: 1.2rem 0 .55rem; font: 400 clamp(1.8rem, 6vw, 2.45rem)/1.05 var(--serif); letter-spacing: -.05em; }
-h1 em { color: var(--roxo); }
-p { margin: 0 0 1.6rem; max-width: 30ch; font-size: 1rem; line-height: 1.5; color: #555673; }
+h1 { margin: .3rem 0 1.6rem; font: 500 clamp(.875rem, 3.7vw, 1rem)/1.35 var(--sans); color: var(--tinta); }
 .entrar {
   display: inline-flex;
   align-items: center;
