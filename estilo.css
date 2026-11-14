@@ -35,14 +35,15 @@ body {
   box-shadow: 0 1rem 3rem #3027440c;
 }
 .conteudo { padding: clamp(2rem, 5.5vw, 4.5rem); }
-.identidade { display: flex; align-items: center; gap: .85rem; }
-.marca { display: block; width: clamp(5rem, 9vw, 7.25rem); height: auto; }
+.identidade { --altura-marca: 42px; display: flex; align-items: center; gap: .85rem; }
+.marca { display: block; width: auto; height: var(--altura-marca); }
 .identidade p {
   margin: 0;
+  height: var(--altura-marca);
   color: #664484;
   font-size: clamp(.7rem, 1.05vw, .8rem);
   font-weight: 600;
-  line-height: 1.15;
+  line-height: calc(var(--altura-marca) / 3);
   white-space: nowrap;
 }
 .inicial-mia { color: #4b247e; font-weight: 750; }
@@ -95,6 +96,7 @@ h1 {
 .link-entrar { font-size: .9rem; font-weight: 600; }
 :focus-visible { outline: 3px solid #5943ab; outline-offset: 4px; }
 @media (max-width: 640px) {
+  .identidade { --altura-marca: 33px; }
   .entrada { display: block; max-width: 28rem; }
   .conteudo { padding: clamp(1.5rem, 7vw, 2.5rem); }
   .ilustracao { display: none; }
