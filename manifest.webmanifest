@@ -5,7 +5,7 @@
   "description": "Saúde, cuidados e gastos dos seus animais.",
   "lang": "pt-BR",
   "dir": "ltr",
-  "start_url": "https://miasaude.mota66320704349.chatgpt.site/?acao=escolher",
+  "start_url": "https://miasaude.mota66320704349.chatgpt.site/?acao=hoje",
   "scope": "https://miasaude.mota66320704349.chatgpt.site/",
   "display": "standalone",
   "background_color": "#f5f4f9",
