@@ -1,0 +1,19 @@
+{
+  "id": "https://miasaude.mota66320704349.chatgpt.site/",
+  "name": "MIA · Monitoramento de Indicadores Animais",
+  "short_name": "MIA",
+  "description": "Saúde, cuidados e gastos dos seus animais.",
+  "lang": "pt-BR",
+  "dir": "ltr",
+  "start_url": "https://miasaude.mota66320704349.chatgpt.site/?acao=escolher",
+  "scope": "https://miasaude.mota66320704349.chatgpt.site/",
+  "display": "standalone",
+  "background_color": "#f5f4f9",
+  "theme_color": "#504092",
+  "prefer_related_applications": false,
+  "icons": [
+    {"src": "icones/mia-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any"},
+    {"src": "icones/mia-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any"},
+    {"src": "icones/mia-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable"}
+  ]
+}
