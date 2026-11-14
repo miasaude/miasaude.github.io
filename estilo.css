@@ -51,6 +51,7 @@ h1 {
   text-wrap: balance;
 }
 .descricao { max-width: 30ch; margin: 1.25rem 0 0; color: #5b5667; font-size: 1.0625rem; line-height: 1.5; }
+.descricao + .descricao { margin-top: .55rem; }
 .entrar {
   display: inline-flex;
   align-items: center;
