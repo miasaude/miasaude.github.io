@@ -27,32 +27,8 @@ body {
   background: #fefeff;
   box-shadow: 0 14px 46px #3937530d;
 }
-.simbolo {
-  position: relative;
-  isolation: isolate;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  width: 35px;
-  height: 28px;
-  gap: 7px;
-  background: var(--roxo);
-  border-radius: 45% 45% 50% 50%;
-}
-.simbolo::before, .simbolo::after {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  top: -4px;
-  width: 12px;
-  height: 14px;
-  border-radius: 2px;
-  background: var(--roxo);
-}
-.simbolo::before { left: 0; transform: skewY(28deg); }
-.simbolo::after { right: 0; transform: skewY(-28deg); }
-.simbolo i { width: 4px; height: 3px; border-radius: 50%; background: white; }
-h1 { margin: 1.2rem 0 .55rem; font: 400 clamp(2rem, 8vw, 2.85rem)/1.05 var(--serif); letter-spacing: -.05em; }
+.marca { display: block; width: min(12rem, 80%); height: auto; }
+h1 { margin: 1.2rem 0 .55rem; font: 400 clamp(1.8rem, 6vw, 2.45rem)/1.05 var(--serif); letter-spacing: -.05em; }
 h1 em { color: var(--roxo); }
 p { margin: 0 0 1.6rem; max-width: 30ch; font-size: 1rem; line-height: 1.5; color: #555673; }
 .entrar {
