@@ -1,3 +1,4 @@
+@font-face{font-family:"DM Sans";src:url("dm-sans-latin.woff2") format("woff2");font-weight:400 700;font-style:normal;font-display:swap}
 /* latin-ext */
 @font-face {
   font-family: 'Source Serif 4';
@@ -21,6 +22,7 @@
 :root {
   color-scheme: light;
   --fonte: "Source Serif 4", Georgia, Cambria, "Times New Roman", serif;
+  --fonte-ui: "DM Sans", "Segoe UI", Roboto, system-ui, sans-serif;
   font-family: var(--fonte);
   font-optical-sizing: auto;
   font-variant-numeric: lining-nums;
@@ -61,6 +63,7 @@ body {
   white-space: nowrap;
 }
 .inicial-mia { color: #4b247e; font-weight: 750; }
+.entrar,.link-entrar,button,input[type=submit],input[type=button]{font-family:var(--fonte-ui)}
 h1 {
   margin: clamp(2.6rem, 5vw, 4rem) 0 0;
   font-size: clamp(2.7rem, 5.4vw, 4.25rem);
