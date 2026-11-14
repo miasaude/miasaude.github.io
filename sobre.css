@@ -1,0 +1,22 @@
+
+.marca-dagua { position: relative; isolation: isolate; overflow: hidden; }
+.marca-dagua::before {
+  content: ""; position: absolute; z-index: -1; right: .8rem; bottom: -.2rem;
+  width: var(--pata-tamanho, 8.5rem); aspect-ratio: 270 / 256;
+  background: url("marca-mia.webp") left center / 288.889% auto no-repeat;
+  opacity: .045; pointer-events: none;
+}
+.sobre-mia { max-width: 49rem; margin: .75rem auto 2rem; }
+.sobre-abertura { --pata-tamanho: clamp(9rem, 23vw, 14rem); padding: clamp(1.5rem, 4vw, 3rem); background: linear-gradient(120deg, #f7f5fc, #eef1fb); border: 1px solid #e2ddec; border-radius: 1.1rem; }
+.sobrancelha { margin: 0 0 .85rem; color: #665087; font-size: .75rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; }
+.sobre-abertura h1 { max-width: 13ch; margin: 0; font: 600 clamp(2.3rem, 5vw, 3.6rem)/1.06 "DM Sans", system-ui, sans-serif; letter-spacing: -.045em; color: #322344; }
+.sobre-intro { max-width: 36ch; margin: 1.15rem 0 0; color: #625b6d; font-size: 1.05rem; line-height: 1.6; }
+.sobre-texto { max-width: 65ch; margin: clamp(1.5rem, 4vw, 2.75rem) auto; padding-inline: clamp(.5rem, 3vw, 1.5rem); color: #514b5b; font-size: 1rem; line-height: 1.8; }
+.sobre-texto p { margin: 0 0 1.1rem; }
+.missao-mia { --pata-tamanho: 11rem; padding: clamp(1.4rem, 4vw, 2.5rem); border: 1px solid #ded6ec; border-radius: 1rem; background: #f0ebf8; }
+.missao-mia h2 { max-width: 26ch; margin: 0; font-size: clamp(1.45rem, 3vw, 2rem); line-height: 1.25; font-weight: 600; letter-spacing: -.025em; color: #453064; }
+.missao-mia > p:last-child { max-width: 42ch; margin: 1rem 0 0; color: #62546f; font-size: .95rem; line-height: 1.6; }
+.rodape-app { display: flex; align-items: center; justify-content: space-between; gap: 1rem; width: min(64rem, calc(100% - 2rem)); margin: 1rem auto 0; padding: 1rem 0 max(1rem, env(safe-area-inset-bottom)); border-top: 1px solid #e4dfed; font-size: .78rem; color: #777080; }
+.rodape-app a { display: inline-flex; align-items: center; min-height: 44px; color: #665087; text-decoration: none; }
+.rodape-app a:hover { text-decoration: underline; }
+@media (forced-colors: active) { .marca-dagua::before { display: none; } }
